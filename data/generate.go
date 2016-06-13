@@ -3,8 +3,8 @@
 // go run generate.go && go fmt
 
 // The generate-charset-data command generates the Go source code
-// for github.com/paulrosania/go-charset/data from the data files
-// found in github.com/paulrosania/go-charset/datafiles.
+// for github.com/ex-troll/go-charset/data from the data files
+// found in github.com/ex-troll/go-charset/datafiles.
 // It should be run in the go-charset root directory.
 // The resulting Go files will need gofmt'ing.
 package main
@@ -36,7 +36,7 @@ var tmpl = template.Must(template.New("").Funcs(tfuncs).Parse(`
 
 	package data
 	import (
-		"github.com/paulrosania/go-charset/charset"
+		"github.com/ex-troll/go-charset/charset"
 		"io"
 		"io/ioutil"
 		"strings"
@@ -58,7 +58,7 @@ var docTmpl = template.Must(template.New("").Funcs(tfuncs).Parse(`
 	// data files as Go data. It registers the data with the charset
 	// package as a side effect of its import. To use:
 	//
-	//	import _ "github.com/paulrosania/go-charset"
+	//	import _ "github.com/ex-troll/go-charset"
 	package {{basename .Package}}
 `))
 

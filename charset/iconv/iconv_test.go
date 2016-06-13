@@ -2,8 +2,8 @@ package iconv_test
 
 import (
 	"bytes"
-	"github.com/paulrosania/go-charset/charset"
-	_ "github.com/paulrosania/go-charset/charset/iconv"
+	"github.com/ex-troll/go-charset/charset"
+	_ "github.com/ex-troll/go-charset/charset/iconv"
 	"io"
 	"strings"
 	"testing"
